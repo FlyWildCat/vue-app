@@ -1,5 +1,12 @@
-# Vue 3 + Vite
+## Домашнее задание №3
+### Создание главной страницы / базовые компоненты
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+### Цель:
+- загружать данные;
+- передавать данные в компоненты;
+- работать с директивами.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+### Описание/Пошаговая инструкция выполнения домашнего задания:
+1. Работаем только главной страницей;
+2. Создаём компоненты: страница товара, вывод списка товаров через v-for;
+3. Список товаров берём из заранее подготовленного JSON (скачать https://fakestoreapi.com/products)
