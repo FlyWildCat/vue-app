@@ -15,9 +15,7 @@
 </template>
 
 <script setup>
-defineProps({
-    product: Object
-})
+defineProps({ product: Object })
 </script>
 
 <style scoped>

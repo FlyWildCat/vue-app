@@ -1,16 +1,36 @@
 <template>
 	<div id="app">
-		<header>
-			<h1>Витрина интернет магазина</h1>
-		</header>
+		<HeaderSearch @search="updateSearchResults"></HeaderSearch>
 		<main>
-			<ProductsList />
+			<section>
+				<ProductsList :poisk="searchTerm"></ProductsList>
+			</section>
+
+			<!-- <section>
+				<h2>Оформление заказа</h2>
+				<OrderForm></OrderForm>
+			</section>
+
+			<section>
+				<h2>Создание нового товара</h2>
+				<NewProductForm></NewProductForm>
+			</section> -->
 		</main>
 	</div>
 </template>
 
 <script setup>
-import ProductsList from './components/ProductsList.vue'
+import HeaderSearch from './components/HeaderSearch.vue';
+import ProductsList from './components/ProductsList.vue';
+
+import { ref } from 'vue';
+
+const searchTerm = ref(''); // Текущий поисковый запрос
+
+// Получаем данные от дочернего компонента HeaderSearch
+const updateSearchResults = (term) => {
+	searchTerm.value = term
+}
 </script>
 
 <style>
@@ -29,7 +49,7 @@ body {
 
 header {
 	background-color: #4caf50;
-	color: white;
+	/* color: white; */
 	padding: 1rem;
 	text-align: center;
 }
