@@ -30,7 +30,8 @@ const filteredProducts = computed(() => {
         const tl = p.title.toLowerCase();
         const cl = p.category.toLowerCase();
         const pl = props.poisk.toLowerCase();
-        return tl.includes(pl) || cl.includes(pl)
+        console.log(p.price, Number.parseFloat(props.poisk));
+        return tl.includes(pl) || cl.includes(pl) || p.price === Number.parseFloat(props.poisk);
     })
 })
 </script>

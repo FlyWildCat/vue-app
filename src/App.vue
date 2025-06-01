@@ -6,15 +6,15 @@
 				<ProductsList :poisk="searchTerm"></ProductsList>
 			</section>
 
-			<!-- <section>
+			<section>
 				<h2>Оформление заказа</h2>
-				<OrderForm></OrderForm>
+				<!-- <OrderForm></OrderForm> -->
 			</section>
 
 			<section>
 				<h2>Создание нового товара</h2>
-				<NewProductForm></NewProductForm>
-			</section> -->
+				<!-- <NewProductForm></NewProductForm> -->
+			</section>
 		</main>
 	</div>
 </template>
